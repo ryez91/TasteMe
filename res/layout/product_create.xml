@@ -1,0 +1,90 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/shape_user_logindialog" >
+
+    <EditText
+        android:id="@+id/edt_productcreate_name"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape_main_search"
+        android:hint="Product Name" >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/edt_productcreate_price"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/edt_productcreate_name"
+        android:layout_below="@+id/edt_productcreate_name"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_main_search"
+        android:hint="Price"
+        android:inputType="number|numberDecimal" >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/edt_productcreate_seller"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_alignBaseline="@+id/edt_productcreate_price"
+        android:layout_alignBottom="@+id/edt_productcreate_price"
+        android:layout_alignRight="@+id/edt_productcreate_name"
+        android:background="@drawable/shape_main_search"
+        android:hint="Seller" >
+
+    </EditText>
+    
+    <EditText
+        android:id="@+id/edt_productcreate_describ"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/edt_productcreate_price"
+        android:layout_below="@+id/edt_productcreate_price"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_main_search"
+        android:gravity="top|left"
+        android:hint="Description" >
+
+    </EditText>
+    
+    <EditText
+        android:id="@+id/edt_productcreate_detail"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/edt_productcreate_describ"
+        android:layout_below="@+id/edt_productcreate_describ"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_main_search"
+        android:hint="Detail" >
+
+    </EditText>
+
+    <ListView
+        android:id="@+id/list_productcreate_left"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/edt_productcreate_detail"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_main_body" >
+
+    </ListView>
+
+    <ListView
+        android:id="@+id/list_productcreate_right"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/edt_productcreate_detail"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_main_body" >
+
+    </ListView>
+
+</RelativeLayout>

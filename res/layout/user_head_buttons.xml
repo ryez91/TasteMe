@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/user_btn_said"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:background="@drawable/shape_user_button"
+        android:onClick="userClick"
+        android:text="Said" />
+
+    <Button
+        android:id="@+id/user_btn_like"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:background="@drawable/shape_user_button"
+        android:onClick="userClick"
+        android:text="Liked" />
+
+    <Button
+        android:id="@+id/user_btn_me"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:background="@drawable/shape_user_button"
+        android:onClick="userClick"
+        android:text="Me" />
+
+</LinearLayout>

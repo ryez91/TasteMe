@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+    <EditText
+        android:id="@+id/edt_groupjoin_search"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/txt_dlg_group_describ"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/btn_groupjoin_search"
+        android:background="@drawable/shape_main_search"
+        android:ems="10"
+        android:hint="Search" >
+    </EditText>
+    
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/view_group_recommend"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="#EEE9E9" />
+
+    <TextView
+        android:id="@+id/txt_listgroup_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_groupjoin_search"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/btn_groupjoin_search"
+        android:text="← Click Left To Search"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/btn_groupjoin_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/shape_mainmenu_button"
+        android:drawableTop="@drawable/user_club_find" />
+
+    <include
+        android:id="@+id/view_group_recommend"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btn_groupjoin_search"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="0dp"
+        layout="@layout/group_join_recommend" />
+
+    <ListView
+        android:id="@+id/list_groupjoin_result"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp" >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/txt_dlg_group_describ"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/btn_groupjoin_search"
+        android:gravity="center_horizontal"
+        android:text="Find a Group"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

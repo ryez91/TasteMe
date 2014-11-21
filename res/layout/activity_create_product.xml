@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:id="@+id/include1"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        layout="@layout/comment_create_navigationbar" />
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="500dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/include1"
+        layout="@layout/product_create" />
+
+</RelativeLayout>

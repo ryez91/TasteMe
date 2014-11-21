@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/shape_user_logindialog" >
+
+    <EditText
+        android:id="@+id/edt_create_name"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/shape_main_search"
+        android:hint="Username"
+        android:inputType="text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/edt_create_pass"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/edt_create_name"
+        android:layout_below="@+id/edt_create_name"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_main_search"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textAppearance="?android:attr/textAppearanceMedium" >
+
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/edt_create_pass"
+        android:layout_below="@+id/edt_create_pass"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_user_buttonsmall"
+        android:onClick="loginClick"
+        android:text="Log In" />
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/btn_login"
+        android:layout_below="@+id/btn_login"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_user_buttonsmall"
+        android:onClick="loginClick"
+        android:text="Sign Up" />
+
+</RelativeLayout>

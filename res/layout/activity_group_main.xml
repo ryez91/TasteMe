@@ -1,0 +1,89 @@
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/txt_user_club_latest_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_group_navigate"
+            android:layout_centerHorizontal="true"
+            android:text="Group Top Stars"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <ImageView
+            android:id="@+id/img_latest_product2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/txt_user_club_latest_news"
+            android:background="@drawable/shape_productmenu_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/no_image" />
+
+        <ImageView
+            android:id="@+id/img_latest_product1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/img_latest_product2"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape_productmenu_image"
+            android:onClick="imgClick"
+            android:src="@drawable/no_image" />
+
+        <ImageView
+            android:id="@+id/img_latest_product3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/img_latest_product2"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/shape_productmenu_image"
+            android:onClick="imgClick"
+            android:src="@drawable/no_image" />
+        
+            <View
+                android:id="@+id/view1"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/img_latest_product3"
+                android:layout_marginTop="10dp"
+                android:background="#8B8B83" />
+
+        <TextView
+                android:id="@+id/txt_user_group_new_comments_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="New Comments"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ListView
+            android:id="@+id/listview_new_comments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_user_group_new_comments_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" >
+        </ListView>
+
+        <include
+            android:id="@+id/view_group_navigate"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            layout="@layout/user_navigationbar" />
+
+        <include android:id="@+id/view_group_loading"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/view_group_navigate"
+            android:layout_centerHorizontal="true"
+            layout="@layout/user_loading" />
+
+    </RelativeLayout>

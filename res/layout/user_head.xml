@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/shape_user_head" >
+    
+     <ImageView
+         android:id="@+id/img_user_photo"
+         android:layout_width="100dp"
+         android:layout_height="100dp"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentTop="true"
+         android:background="@drawable/shape_productmenu_image"
+         android:src="@drawable/add_user" />
+
+    <TextView
+        android:id="@+id/user_txt_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/img_user_photo"
+        android:gravity="center_horizontal"
+        android:text="User Name"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/img_user_photo"
+        android:layout_marginTop="5dp"
+        layout="@layout/user_head_buttons" />
+
+    <TextView
+        android:id="@+id/user_txt_describ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/user_txt_name"
+        android:layout_below="@+id/user_txt_name"
+        android:layout_marginTop="15dp"
+        android:text="Description" />
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/shape_main_navigate" >
+
+    <Button
+        android:id="@+id/btn_product_navigate_back"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_navigate_button"
+        android:onClick="closeClick"
+        android:text="Close"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageView
+        android:id="@+id/img_list_trymore"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn_navigate_back"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo" />
+    
+    <Button
+        android:id="@+id/btn_product_navigate_manage"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_navigate_button"
+        android:onClick="manageClick"
+        android:text="Manage"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/view1"
+        android:layout_below="@+id/view1"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="Confirm to join this group?"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txt_dlg_group_creator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_dlg_group_member"
+        android:layout_below="@+id/txt_dlg_group_member"
+        android:layout_marginTop="5dp"
+        android:text="Creator:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txt_dlg_group_describ"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#EEE9E9" />
+
+    <TextView
+        android:id="@+id/txt_dlg_group_prefer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_dlg_group_creator"
+        android:layout_below="@+id/txt_dlg_group_creator"
+        android:layout_marginTop="5dp"
+        android:text="Preference:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageView
+        android:id="@+id/img_dlg_groupicon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape_productmenu_image"
+        android:src="@drawable/groupicon" />
+
+    <TextView
+        android:id="@+id/txt_dlg_group_member"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_dlg_groupicon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Member:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txt_user_loadingcontext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txt_dlg_group_member"
+        android:layout_alignBottom="@+id/txt_dlg_group_member"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:text="Member:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txt_dlg_group_prefer"
+        android:layout_alignLeft="@+id/txt_user_loadingcontext"
+        android:text="Creator:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txt_dlg_group_prefer"
+        android:layout_alignBottom="@+id/txt_dlg_group_prefer"
+        android:layout_alignLeft="@+id/textView3"
+        android:text="Preference:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txt_dlg_group_describ"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txt_dlg_group_prefer"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:text="Description"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

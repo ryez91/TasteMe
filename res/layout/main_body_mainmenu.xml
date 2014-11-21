@@ -1,0 +1,108 @@
+  
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/unused_sep"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btn_Dairy"
+        android:src="@drawable/sep_line" />
+
+    <TextView
+        android:id="@+id/txt_cate_maintitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Categories"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#666666" />
+
+    <ListView
+        android:id="@+id/list_trymore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/unused_sep" >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/btn_Sweets"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txt_cate_maintitle"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_mainmenu_button"
+        android:drawablePadding="3dp"
+        android:drawableTop="@drawable/sweets"
+        android:text="Sweets"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/btn_Snacks"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/btn_Sweets"
+        android:background="@drawable/shape_mainmenu_button"
+        android:drawablePadding="3dp"
+        android:drawableTop="@drawable/snacks"
+        android:text="Snacks"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <Button
+        android:id="@+id/btn_Bakery"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignTop="@+id/btn_Sweets"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape_mainmenu_button"
+        android:drawablePadding="3dp"
+        android:drawableTop="@drawable/bakery"
+        android:text="Bakery"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/btn_Dairy"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btn_Sweets"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape_mainmenu_button"
+        android:drawablePadding="3dp"
+        android:drawableTop="@drawable/dairy"
+        android:text="Dairy"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <Button
+        android:id="@+id/btn_Cooked"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/btn_Dairy"
+        android:background="@drawable/shape_mainmenu_button"
+        android:drawablePadding="3dp"
+        android:drawableTop="@drawable/cooked"
+        android:text="Cooked"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <Button
+        android:id="@+id/btn_Drinks"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignTop="@+id/btn_Dairy"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape_mainmenu_button"
+        android:drawablePadding="3dp"
+        android:drawableTop="@drawable/drinks"
+        android:text="Drinks"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

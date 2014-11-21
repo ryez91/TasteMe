@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity" >
+
+    <include
+        android:id="@+id/view_main_maincategory"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view_main_head"
+        layout="@layout/main_body_mainmenu" />
+
+    <include
+        android:id="@+id/view_main_subcategory"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view_navigator"
+        layout="@layout/main_body_submenu" />
+
+    <include
+        android:id="@+id/view_main_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        layout="@layout/main_head" />
+
+    <include
+        android:id="@+id/view_main_productlist"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view_navigator"
+        layout="@layout/main_body_productmenu" />
+
+    <include
+        android:id="@+id/view_navigator"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        layout="@layout/main_navigationbar" />
+
+</RelativeLayout>

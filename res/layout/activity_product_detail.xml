@@ -1,0 +1,303 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/product_img_product"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/product_txt_name"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shape_productmenu_image"
+        android:src="@drawable/no_image" />
+
+    <TextView
+        android:id="@+id/product_txt_sour_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@+id/product_txt_name"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/product_img_product"
+        android:text="Sour"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/product_txt_sweet_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignLeft="@+id/product_txt_sour_tag"
+        android:layout_below="@+id/product_txt_sour_tag"
+        android:layout_marginTop="5dp"
+        android:text="Sweet"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/product_txt_bitter_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignLeft="@+id/product_txt_sweet_tag"
+        android:layout_below="@+id/product_txt_sweet_tag"
+        android:layout_marginTop="5dp"
+        android:text="Bitter"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/product_txt_spicy_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignLeft="@+id/product_txt_bitter_tag"
+        android:layout_below="@+id/product_txt_bitter_tag"
+        android:layout_marginTop="5dp"
+        android:text="Spicy"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/product_txt_salty_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignLeft="@+id/product_txt_spicy_tag"
+        android:layout_below="@+id/product_txt_spicy_tag"
+        android:layout_marginTop="5dp"
+        android:text="Salty"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <View
+        android:id="@+id/viewSep1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/product_img_product"
+        android:layout_marginTop="5dp"
+        android:background="#888888" />
+
+    <View
+        android:id="@+id/viewSep2"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/viewSep1"
+        android:background="#BBBBBB" />
+
+    <View
+        android:id="@+id/viewSep3"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/viewSep2"
+        android:background="#888888" />
+
+    <TextView
+        android:id="@+id/product_txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/product_img_product"
+        android:layout_below="@+id/product_navigate"
+        android:layout_marginTop="5dp"
+        android:text="Name sample"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/product_txt_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/product_txt_name"
+        android:layout_below="@+id/viewSep3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="4dp"
+        android:text="$Price"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ff8c00" />
+
+    <View
+        android:id="@+id/viewSep4"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/product_txt_price"
+        android:layout_marginTop="4dp"
+        android:background="#888888" />
+
+    <TextView
+        android:id="@+id/product_txt_descrip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/product_txt_price"
+        android:layout_below="@+id/viewSep4"
+        android:layout_marginTop="4dp"
+        android:text="Enter Description here"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <View
+        android:id="@+id/viewSep5"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/product_txt_descrip"
+        android:layout_marginTop="4dp"
+        android:background="#888888" />
+
+    <TextView
+        android:id="@+id/product_txt_productdetails"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/product_txt_descrip"
+        android:layout_below="@+id/viewSep5"
+        android:layout_marginTop="4dp"
+        android:text="Details"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <View
+        android:id="@+id/viewSep6"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/product_txt_productdetails"
+        android:layout_marginTop="4dp"
+        android:background="#888888" />
+
+    <View
+        android:id="@+id/viewSep7"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/viewSep6"
+        android:background="#BBBBBB" />
+
+    <View
+        android:id="@+id/viewSep8"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/viewSep7"
+        android:background="#888888" />
+
+    <TextView
+        android:id="@+id/product_txt_sweet_prog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/product_txt_sweet_tag"
+        android:layout_alignBottom="@+id/product_txt_sweet_tag"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/product_txt_sweet_tag"
+        android:background="@drawable/shape_product_progress"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/product_txt_bitter_prog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/product_txt_bitter_tag"
+        android:layout_alignBottom="@+id/product_txt_bitter_tag"
+        android:layout_alignLeft="@+id/product_txt_sweet_prog"
+        android:background="@drawable/shape_product_progress"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/product_txt_sour_prog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/product_txt_sour_tag"
+        android:layout_alignBottom="@+id/product_txt_sour_tag"
+        android:layout_alignLeft="@+id/product_txt_sweet_prog"
+        android:background="@drawable/shape_product_progress"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/product_txt_spicy_prog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/product_txt_spicy_tag"
+        android:layout_alignBottom="@+id/product_txt_spicy_tag"
+        android:layout_alignLeft="@+id/product_txt_sweet_prog"
+        android:background="@drawable/shape_product_progress"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/product_txt_salty_prog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/product_txt_salty_tag"
+        android:layout_alignBottom="@+id/product_txt_salty_tag"
+        android:layout_alignLeft="@+id/product_txt_sweet_prog"
+        android:background="@drawable/shape_product_progress"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/product_txt_where"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/product_txt_price"
+        android:layout_alignBottom="@+id/product_txt_price"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text=" @ Where"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#666666" />
+
+    <include
+        android:id="@+id/product_navigate"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        layout="@layout/productdetail_navigationbar" />
+
+    <include
+        android:id="@+id/view_productdetail_buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewSep8"
+        android:layout_centerHorizontal="true"
+        layout="@layout/productdetail_buttons" />
+    
+    <View
+        android:id="@+id/viewSep9"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view_productdetail_buttons"
+        android:background="#888888" />
+
+    <View
+        android:id="@+id/viewSep10"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/viewSep9"
+        android:background="#BBBBBB" />
+
+    <View
+        android:id="@+id/viewSep11"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/viewSep10"
+        android:background="#888888" />
+
+    <ListView
+        android:id="@+id/list_productdetail_comment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/viewSep11" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/txt_productdetail_cmtloading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewSep11"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="Loading Comments..."
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
+</ScrollView>

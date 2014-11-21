@@ -1,0 +1,72 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:id="@+id/include1"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        layout="@layout/user_navigationbar" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/include1"
+        android:src="@drawable/main_find" />
+
+    <TextView
+        android:id="@+id/txt_find_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/imageView1"
+        android:gravity="center_horizontal"
+        android:text="Let&apos;s Find"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/btn_find_start"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/txt_find_title"
+        android:layout_below="@+id/txt_find_title"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_user_buttonsmall"
+        android:onClick="findClick"
+        android:text="Start" />
+
+    <include
+        android:id="@+id/view_find_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        layout="@layout/find_algorithm" />
+
+    <TextView
+        android:id="@+id/txt_find_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/view_find_result"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Click The Button to Start"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
+
+</ScrollView>

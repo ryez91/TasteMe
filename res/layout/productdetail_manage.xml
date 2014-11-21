@@ -1,0 +1,158 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+    <TextView
+        android:id="@+id/txt_productmanage_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/img_productmanage"
+        android:layout_marginTop="5dp"
+        android:text="The Product Should be..."
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/txt_listTry_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_productmanage_title"
+        android:layout_below="@+id/txt_productmanage_title"
+        android:layout_marginTop="17dp"
+        android:text="Sour"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txt_dlg_group_member"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_listTry_detail"
+        android:layout_below="@+id/seek_productmanage_sour"
+        android:layout_marginTop="17dp"
+        android:text="Sweet"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <SeekBar
+        android:id="@+id/seek_productmanage_sweet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txt_dlg_group_member"
+        android:max="100"
+        android:progress="50"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/txt_dlg_group_member" />
+
+    <TextView
+        android:id="@+id/txt_dlg_group_creator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_dlg_group_member"
+        android:layout_below="@+id/txt_dlg_group_member"
+        android:layout_marginTop="17dp"
+        android:text="Bitter"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txt_dlg_group_prefer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_dlg_group_creator"
+        android:layout_below="@+id/txt_dlg_group_creator"
+        android:layout_marginTop="17dp"
+        android:text="Spicy"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_dlg_group_prefer"
+        android:layout_below="@+id/txt_dlg_group_prefer"
+        android:layout_marginTop="17dp"
+        android:text="Salty"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <SeekBar
+        android:id="@+id/seek_productmanage_bitter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txt_dlg_group_creator"
+        android:layout_alignLeft="@+id/seek_productmanage_sweet"
+        android:max="100"
+        android:progress="50"
+        android:layout_marginRight="5dp" />
+
+    <SeekBar
+        android:id="@+id/seek_productmanage_spicy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txt_dlg_group_prefer"
+        android:layout_alignLeft="@+id/seek_productmanage_bitter"
+        android:max="100"
+        android:progress="50"
+        android:layout_marginRight="5dp" />
+
+    <SeekBar
+        android:id="@+id/seek_productmanage_salty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_alignLeft="@+id/seek_productmanage_spicy"
+        android:max="100"
+        android:progress="50"
+        android:layout_marginRight="5dp" />
+
+    <SeekBar
+        android:id="@+id/seek_productmanage_sour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txt_listTry_detail"
+        android:layout_alignLeft="@+id/seek_productmanage_sweet"
+        android:layout_marginRight="5dp"
+        android:max="100"
+        android:progress="50" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="20dp"
+        android:text="Please slide them to set the product's property"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    <Button
+        android:id="@+id/btn_productmanage_barcode"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignRight="@+id/seek_productmanage_salty"
+        android:layout_below="@+id/textView7"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_user_buttonsmall"
+        android:onClick="manageClick"
+        android:text="Set Barcode" />
+
+    <Button
+        android:id="@+id/btn_productmanage_finish"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignRight="@+id/seek_productmanage_salty"
+        android:layout_below="@+id/btn_productmanage_barcode"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shape_user_buttonsmall"
+        android:onClick="manageClick"
+        android:text="Finish" />
+
+    <ImageView
+        android:id="@+id/img_productmanage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape_productmenu_image"
+        android:src="@drawable/no_image" />
+
+</RelativeLayout>

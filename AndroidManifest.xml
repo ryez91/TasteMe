@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.osnproject.tasteme"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="12"
+        android:targetSdkVersion="16" />
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.osnproject.tasteme.ProductDetailActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar">
+            
+        </activity>
+        <activity
+            android:name="com.osnproject.tasteme.UserActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar">
+            
+        </activity>
+        <activity
+            android:name="com.osnproject.tasteme.MainActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name="com.osnproject.tasteme.UserLoginActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar">
+            
+        </activity>
+        <activity
+            android:name="com.osnproject.tasteme.UserSignupActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar">
+            
+        </activity>
+        <activity
+            android:name="com.osnproject.tasteme.CreateCommentActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar">
+            
+        </activity>
+        <activity
+            android:name="com.osnproject.tasteme.ProductManageActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar">
+            
+        </activity>
+        <activity
+            android:name="com.osnproject.tasteme.MyCommentsActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar">
+            
+        </activity>
+        <activity
+            android:name="com.osnproject.tasteme.MyLikedActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar">
+            
+        </activity>
+        <activity
+            android:name="com.osnproject.tasteme.UserChangeActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar">
+            
+        </activity>
+        <activity
+            android:name="com.osnproject.tasteme.ChangeIconActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar">
+            
+        </activity>
+        <activity
+            android:name="com.osnproject.tasteme.CreateGroupActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar">
+            
+        </activity>
+        <activity
+            android:name="com.osnproject.tasteme.GroupActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar">
+            
+        </activity>
+        <activity
+            android:name="com.osnproject.tasteme.UserFindActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar">
+            
+        </activity>
+        <activity
+            android:name="com.osnproject.tasteme.CreateProductActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar">
+            
+        </activity>
+        
+    </application>
+
+</manifest>

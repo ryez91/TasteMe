@@ -1,0 +1,117 @@
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:id="@+id/listproduct_img_product"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/shape_productmenu_image"
+            android:src="@drawable/sample" />
+
+        <TextView
+            android:id="@+id/listproduct_txt_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/listproduct_img_product"
+            android:lines="2"
+            android:text="Product name go go go go go go go"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/listproduct_txt_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_alignLeft="@+id/listproduct_txt_name"
+            android:layout_below="@+id/listproduct_txt_name"
+            android:text="$30.00"
+            android:textColor="#ff8c00"
+            
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/listproduct_txt_loc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/listproduct_txt_price"
+            android:layout_alignBottom="@+id/listproduct_txt_price"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/listproduct_txt_price"
+            android:text=" @"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#888888" />
+
+        <ImageView
+            android:id="@+id/listproduct_txt_rating"
+            android:layout_width="125dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignLeft="@+id/listproduct_txt_price"
+            android:layout_below="@+id/listproduct_txt_price"
+            android:src="@drawable/rating" />
+
+        <TextView
+            android:id="@+id/listproduct_txt_tagsour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/listproduct_txt_rating"
+            android:layout_below="@+id/listproduct_txt_rating"
+            android:layout_marginTop="5dp"
+            android:text="Sour"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ff0000" />
+
+        <TextView
+            android:id="@+id/listproduct_txt_tagsweet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_alignBottom="@+id/listproduct_txt_tagsour"
+            android:layout_toRightOf="@+id/listproduct_txt_tagsour"
+            android:text="Sweet"
+            android:textColor="#ff0000"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/listproduct_txt_tagbitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/listproduct_txt_tagsweet"
+            android:layout_alignBottom="@+id/listproduct_txt_tagsweet"
+            android:layout_toRightOf="@+id/listproduct_txt_tagsweet"
+            android:layout_marginLeft="5dp"
+            android:text="Bitter"
+            android:textColor="#ff0000"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+         <TextView
+            android:id="@+id/listproduct_txt_tagspicy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/listproduct_txt_tagbitter"
+            android:layout_alignBottom="@+id/listproduct_txt_tagbitter"
+            android:layout_toRightOf="@+id/listproduct_txt_tagbitter"
+            android:layout_marginLeft="5dp"
+            android:text="Spicy"
+            android:textColor="#ff0000"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+         
+            <TextView
+            android:id="@+id/listproduct_txt_tagsalty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/listproduct_txt_tagspicy"
+            android:layout_alignBottom="@+id/listproduct_txt_tagspicy"
+            android:layout_toRightOf="@+id/listproduct_txt_tagspicy"
+            android:layout_marginLeft="5dp"
+            android:text="Salty"
+            android:textColor="#ff0000"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+    </RelativeLayout>

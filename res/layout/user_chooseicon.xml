@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/shape_user_logindialog" >
+
+    <ImageView
+        android:id="@+id/img_user_changeicon"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_below="@+id/txt_user_changeicon_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_productmenu_image"
+        android:src="@drawable/add_user" />
+
+    <Button
+        android:id="@+id/btn_user_changeicon_retry"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_user_changeicon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_user_buttonsmall"
+        android:onClick="btnClick"
+        android:text="Try My Luck" />
+
+    <TextView
+        android:id="@+id/txt_user_changeicon_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Your Picture is"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/btn_user_changeicon_ok"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_user_changeicon_retry"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_user_buttonsmall"
+        android:onClick="btnClick"
+        android:text="That&apos;s It!" />
+
+</RelativeLayout>

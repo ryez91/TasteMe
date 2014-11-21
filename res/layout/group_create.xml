@@ -1,0 +1,44 @@
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:background="@drawable/shape_user_logindialog">
+
+        <EditText
+            android:id="@+id/etxt_groupcreate_name"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/shape_main_search"
+            android:ems="10"
+            android:hint="Group Name"
+            android:textAppearance="?android:attr/textAppearanceMedium" >
+        
+        </EditText>
+
+        <EditText
+            android:id="@+id/etxt_groupcreate_descrip"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/etxt_groupcreate_name"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape_main_search"
+            android:ems="10"
+            android:gravity="top|left"
+            android:hint="Group Description"
+            android:lines="6" />
+
+        <Button
+            android:id="@+id/btn_groupcreate_create"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/etxt_groupcreate_descrip"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape_user_buttonsmall"
+            android:onClick="createClick"
+            android:text="Create" />
+
+    </RelativeLayout>
